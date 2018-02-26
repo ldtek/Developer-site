@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Daniel Turanov | my dev site</title>
+  </head>
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+padding: 0;
+margin: 0;
+}
+
+body {
+background: #ddd;
+}
+
+.menu {
+position: fixed;
+display: block;
+width: 130px;
+height: 100%;
+background: #333;
+left: -130px;
+top: 0;
+text-align: center;
+padding-top: 60px;
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+.menu:after {
+position: absolute;
+content: "";
+width: 60px;
+height: 60px;
+background: #333;
+top: 0;
+right: -60px;
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+.menu:hover {
+left: 0;
+}
+.menu:hover:after {
+right: 0px;
+}
+.menu:hover .menu_icon {
+left: 50%;
+}
+.menu li {
+list-style-type: none;
+}
+.menu li a {
+color: #FFF;
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+display: block;
+width: 100%;
+height: 40px;
+line-height: 40px;
+font-size: 18px;
+margin: 10px 0;
+}
+.menu li a:hover {
+background: #000;
+}
+
+.menu_icon {
+position: absolute;
+top: 36px;
+left: 158px;
+margin: -10px;
+width: 20px;
+height: 4px;
+background: #fff;
+z-index: 4;
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+.menu_icon:after {
+position: absolute;
+bottom: 7px;
+left: 0px;
+content: '';
+width: 20px;
+height: 4px;
+background: #fff;
+}
+.menu_icon:before {
+position: absolute;
+bottom: -7px;
+left: 0px;
+content: '';
+width: 20px;
+height: 4px;
+background: #fff;
+}
+
+.text {
+width: 68%;
+margin: 10px auto 0 auto;
+font-family: 'Roboto', sans-serif;
+color: #333;
+font-size: 18px;
+line-height: 28px;
+margin-top: 10px;
+}
+.text h2, .text h3 {
+font-size: 30px;
+padding: 20px 0 10px;
+border-bottom: 1px solid #333;
+margin-bottom: 15px;
+}
+.text h2 {
+font-size: 30px;
+line-height: 42px;
+}
+.text h3 {
+font-size: 24px;
+line-height: 34px;
+}
+.text p {
+padding: 10px 0;
+}
+.text img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 10px auto;
+}
+
+@media only screen and (max-width: 1000px) {
+.menu_icon {
+  left: 60px;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  padding-top: 0;
+  padding-left: 80px;
+}
+.menu:after {
+  display: none;
+}
+.menu:hover .menu_icon {
+  left: 60px;
+}
+
+li {
+  float: left;
+  margin: 0 20px;
+}
+li a {
+  padding: 0 10px;
+}
+}
+
+  </style>
+  <body>
+    <ul class="menu">
+  <div class="menu_icon"></div>
+    <li><a href="#">Main</a></li>
+    <li><a href="https://ldtek.github.io/synapse-website/" target="_blank">synapse</a></li>
+    <li><a href="https://twitter.com/Synapseinc1." target="_blank">twitter</a></li>
+    <li><a href="https://github.com/ldtek/" target="_blank">github</a></li>
+</ul>
+<div class="text">
+  <h2>Daniel Turanov dev site / blog</h2>
+  <p>My name is Daniel, and I am a programmer who works with, HTML, CSS, JavaScript, Java, PHP, SQL, Jquery, C, C++, Objective-C, C#, and python. I also work on my own startup named Synapse which is a compression company, to go to that site go  <a href="https://ldtek.github.io/synapse-website/" target="_blank">Here</a></p>
+  <p>I not only run my own startup, but I also do a lot of other projects, to check those out go to my github page right <a href="https://github.com/ldtek" target="_blank">here</a>, I as well do web development so if you need a website I can make one for a very competetive price, plsu quickly.</p>
+  <p>Now that you know a bit about me, lets talk about this site. This will be a blog about what I do as a developer and what I released or even questions, so keep reading to find some cool stuff I am going to be up to</p>
+
+  <h3>Synapse</h3>
+
+  <h4>Intro to Synapse</h4>
+  <p>So if you read ontop, I have my own startup named Synapse which is a compression company. What is compression? Well to really sum it up it is something that can make your files smaller and can save you space. That is what I have made. So I have a compression platform that will </p>
+  <p>allow you to compress your files and save you space. It also compresses it better than something microsoft has and on some levels better than what win rar can do. The link to first release will be right here <a href="https://github.com/ldtek/Synapse/raw/master/Synapse.exe" target="">to download click here.</a> </p>
+
+    <h3>news on updates and how it's going</h3>
+  <p> Synapse is currently at its 1.0 version so there are some bugs, but you can help with that by commit to the synapse repo, to go there click <a href="https://github.com/ldtek/Synapse" target="_blank">right here</a>
+
+  <h4>functions and things on 1.0</h4>
+  <ul>
+    <fieldset>
+    <li><b>Compress</b></li>
+    <p>this is a button that will allow the user to select a file or folder that they want to comrpress when clicked, after selected they click okay, than it will compress the <p>
+    <li><b>Extract</b></li>
+    <p>This button will allow the user to choose the compressed file or folder, than extract it, now what it does is turn the compressed files to their original state</p>
+    <li><b>Delete files after archiving</b></li>
+    <p>When you click this button before you compress your files, it will delete the original file and keep the compressed on so that if you have a big folder, you dint have to spend time deleting the extra files</p>
+    </fieldset>
+  </ul>
+
+  <ul>
+    <h4><b>Things coming in 1.1</b></h4>
+    <p>With the release of Syanapse 1.1 coming really soon, I wanted to just tell the people who read this or who have synapse what is coming in the next version,</p>
+    <li>new percausion</li>
+    <p>Well on Synapse is you have the 'Delete files after archiving button' on while extracting Synapse will delete the file in whole, so now when you click it, it will ask for a confirm So now people wont have to worry about their files getting deleted</p>
+    <li>better data</li>
+    <p>there has been a problem saying that when it compresses it gives innacurate data. So now we are working hard to fix it but this might be an add on we are not sure if we can do it in time for release</p>
+    <li>UI update</li>
+    <p>it will not be a big update to the design but it will look a bit different with some different colors and all fo that</p>
+    <hr/>
+    <p>thats really all we are doing this release but we are going to make a lot new changes in 1.2 so be waiting for that</p>
+  </ul>
+
+  <p>So that is really all we are doing with it, but if you want to contribute i will leave the github page to contribute the link is right <a href="https://github.com/ldtek/Synapse" target="_blank">here</a> So please tell me what you think of this</p>
+
+  <h3>my other projects</h3>
+  <p>So I have been doing a lot of web development recently and if you want to hire me for a really cool website I can do it for cheap price. But anyway I have gotten into web development again and I have been releasing a lot of website that I just had sitting on my computer so if you want to check it out here are the links </p>
+  <hr/>
+  <fieldset>
+    <li><b>Synapse</b></li>
+    <p>the website for the compression link <a href="https://ldtek.github.io/synapse-website/" target="_blank"><button>right here</button></a></p>
+    <hr/>
+    <li><b>Snake game</b></li>
+    <p>this is a simple snake game i made a while ago, link <a href="https://ldtek.github.io/retro-snake-game" target="_blank"><button>here</button></a>
+    <hr/>
+    <li><b>draw thing</b></li>
+    <p>This is a thing i built where you hover over the screen with the mouse and it makes a little design, see it right <a href="https://ldtek.github.io/Drawing-thing" target="_blank"><button>here</button></a>
+    <hr/>
+    <li><b>Jarvis Chat</b></li>
+    <p>This is a simple chat bot that I built this is pretty cool but check it out right <a href="https://ldtek.github.io/Jarvis-AI" target="_blank"><button>here</button></a>
+    <hr/>
+    <li><b>flappy Block</b></li>
+    <p>This is a simple game that resembles flappy bird it is abd but this is link <a href="https://ldtek.github.io/flappy-block"><button>right here</button></a>
+  </fieldset>
+  <p>So That is really all I have been up to latley as a programmer, or just anything I am doing but My social media will be right here</p>
+  <ul>
+    <li><a href="https://twitter.com/Synapseinc1" target="_blank">Twitter</a></li>
+    <li><a href="https://www.facebook.com/profile.php?id=100014113987241" target="_blank">Facebook</a></li>
+    <li><a href="https://github.com/ldtek" target="_blank">Github</a></li>
+  </ul>
+  <b><hr/></b>
+  <h1> To contact me for bussiness please contact me at dutyguy007@gmail.com </h1>
+</div>
+
+  </body>
+</html>
